@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Pixelify+Sans&family=Roboto:wght@400;500;700&display=swap');
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Pixelify Sans';
+  background-image: url(pic/starryskies.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.container2 {
+  /* height: 550px;
+  width: 535px; */
+  height: 100%;
+  width: 1000px;
+  background-color: #666666;
+  margin: auto;
+  /* margin-top: 100px; */
+  border: aqua solid;
+  border-radius: 5px;
+  opacity: 0.5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+
+img {
+  width: 500px;
+  margin-top: 10px;
+  position: absolute;
+  top: 230px;
+  left: 35%;
+  opacity: 0.5;
+}
+
+.todo-grid,
+.todo-input-grid {
+  display: grid;
+  grid-template-columns: 200px 150px 100px;
+  column-gap: 10px;
+  row-gap: 10px;
+  align-items: center;
+  /* margin-left: 32px; */
+}
+
+.todo-input-grid {
+  margin-bottom: 10px;
+  align-items: stretch;
+  /* margin-left: 32px; */
+}
+
+.name-input,
+.due-date-input {
+  font-size: 16px;
+  padding: 6px;
+  font-family: 'Pixelify Sans';
+  font-weight: bold;
+}
+
+.add-todo-button {
+  font-family: 'Pixelify Sans';
+  font-weight: bold;
+  /* padding: 10px 0px; */
+  background-color: #aaaaaa;
+  border-radius: 5px;
+  border: none;
+  font-size: 15px;
+  padding: 10px 20px;
+  color: aqua;
+  position: relative;
+  cursor: pointer;
+
+}
+
+/* .delete-todo-button {
+  background-color: darkred;
+  color: white;
+  border: none;
+  font-size: 15px;
+  cursor: pointer;
+  padding-top: 10px;
+  padding-bottom: 10px;
+} */
+.delete-todo-button {
+  font-family: 'Pixelify Sans';
+  font-weight: bold;
+  /* padding: 10px 0px; */
+  background-color: #aaaaaa;
+  border-radius: 5px;
+  border: none;
+  font-size: 15px;
+  padding: 10px 20px;
+  color: darkred;
+  position: relative;
+  cursor: pointer;
+  /* margin-bottom: 10px; */
+  /* margin-top: -5px; */
+}
+
+.todo-text {
+  text-align: center;
+  padding-top: 25px;
+  position: relative;
+  font-size: 25px;
+  color: aqua;
+}
+
+div {
+  font-weight: bold;
+  color: aqua;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Pixelify Sans', impact;
+}
+
+body{
+  background-image: url(pic/starryskies.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+}
+
+/* .container2 {
+  margin: 15px auto;
+  max-width: 1000px;
+} */
+
+img {
+  width: 600px;
+  margin-top: 10px;
+  position: fixed;
+  top: 230px;
+  left: 35%;
+  opacity: 0.5;
+}
+
+.box {
+  width: fit-content;
+  height: 100vh;
+  position: absolute;
+  background-color: #aaaaaa;
+  text-align: left;
+  z-index: 1;
+  opacity: 0;
+  left: -500px;
+  pointer-events: none;
+}
+
+.active.box {
+  opacity: 0.7;
+  left: 0px;
+  pointer-events: fill;
+  border-right: aqua solid;
+  transition: 0.5s;
+}
+
+.hamburger-icon {
+  width: fit-content;
+  height: auto;
+  margin: 30px;
+  position: absolute;
+  border-radius: 4px;
+  background-color: white;
+  cursor: pointer;
+  z-index: 2;
+  opacity: 0.5;
+}
+
+.line1, .line2, .line3 {
+   width:  40px;
+   height: 4px;
+   margin: 10px 8px;
+   background-color: black;
+   border-radius: 50px;
+   transition: 0.2s;
+}
+
+.active .line1 {
+  transform: translate(0px , 15px) rotate(45deg);
+}
+
+.active .line2 {
+ opacity: 0;
+}
+
+ .active .line3 {
+  transform: translate(0px , -15px) rotate(-45deg);
+}
+
+nav {
+  padding-top: 100px;
+}
+
+nav ul {
+  margin: 0px 30px;
+}
+
+nav ul li {
+  list-style: none;
+  margin-bottom: 25px;
+  transition: 0.2s;
+}
+
+nav ul li:hover {
+  background-color: grey;
+  border-radius: 8px;
+}
+
+nav ul li a {
+  font-size:  28px;
+  padding: 10px 15px;
+  display:  block;
+  text-decoration: none;
+  font-weight: bold;
+  text-shadow: 5px 5px 8px aqua;
+   color: black;
+   /* text-shadow: 5px 5px 8px black;
+   color: aqua; */
+}
+
+.logout {
+  margin-top: 350px;
+  font-family: Impact;
+  font-weight: normal;
+  color: black;
+  text-shadow: 5px 5px 8px aqua;
+  /* text-align: center; */
+  /* transition: transform .5s; */
+}
