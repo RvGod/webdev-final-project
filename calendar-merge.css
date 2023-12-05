@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Pixelify+Sans&family=Roboto:wght@400;500;700&display=swap');
+
+* {
+  padding: 0%;
+  margin: 0%;
+  font-family: 'Pixelify Sans', impact;
+}
+
+body{
+  /* padding: 0%; */
+  margin: 0%;
+  font-family: 'Pixelify Sans', impact;
+  background-image: url(pic/starryskies.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.container1 {
+  width: 100%;
+  height: 1vh;
+}
+/* .container2 {
+  margin: auto;
+  max-width: 100px;
+} */
+.container2 {
+  margin: auto;
+  max-width: 1200px;
+}
+
+
+#calendar {
+  display: grid;
+  grid-template-columns: repeat(7, 150px);
+  gap: 8px;
+  margin-top: 20px;
+  margin-left: 50px;
+  /* margin-right: 50px; */
+
+}
+
+#monthYear {
+  text-align: center;
+  /* display: inline; */
+  margin-right: 50px;
+  color: aqua;
+  text-shadow: 3px 3px 8px #aaaaaa;
+  opacity: 0.7;
+
+}
+.day-header {
+  text-align: center;
+  padding: 10px;
+  border: 1px solid aqua;
+  border-radius: 3px;
+  width: 130px;
+  color: black;
+  text-shadow: 3px 3px 8px aqua;
+  background-color: #aaaaaa;
+  opacity: 0.6;
+  font-weight: bold;
+} 
+.day {
+  text-align: end;
+  padding: 10px;
+  border: 1px solid aqua;
+  border-radius: 3px;
+  height: 130px;
+  width: 130px;
+  text-shadow: 3px 3px 8px aqua;
+  background-color: #aaaaaa;
+  color: black;
+  opacity: 0.6;
+  font-weight: bold;
+}
+
+.header {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+#navButtons {
+  margin-top: 10px;
+}
+#previous {
+  float: left;
+  opacity: 0.6;
+  color: aqua;
+  background-color: #aaaaaa;
+  border-radius: 8px;
+  padding: 3px 12px 3px 12px;
+  font-size: 20px; 
+
+}
+
+#next {
+  float: right;
+  opacity: 0.6;
+  color: aqua;
+  background-color: #aaaaaa;
+  border-radius: 8px;
+  padding: 3px 12px 3px 12px;
+  font-size: 20px;
+}
+
+#next:hover {
+  color: #f1f1f1;
+}
+#previous:hover {
+  color: #f1f1f1;
+}
+
+#monthYear {
+  margin-top: 10px;
+  margin-left: 50px;
+  font-size: 18px;
+  font-weight: bold;
+  opacity: 0.6;
+ 
+}
+
+.event-div {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  height: 80px;
+  width: 100px;
+  word-wrap: break-word;
+  font-size: 14px;
+}
+img {
+  width: 600px;
+  margin-top: 10px;
+  position: absolute;
+  top: 230px;
+  left: 35%;
+  opacity: 0.5;
+}
+
+.box {
+  width: fit-content;
+  height: 100vh;
+  position: absolute;
+  background-color: #aaaaaa;
+  text-align: left;
+  z-index: 1;
+  opacity: 0;
+  left: -500px;
+  pointer-events: none;
+}
+
+.active.box {
+  opacity: 0.7;
+  left: 0px;
+  pointer-events: fill;
+  border-right: aqua solid;
+  transition: 0.5s;
+}
+
+.hamburger-icon {
+  width: fit-content;
+  height: auto;
+  margin: 30px;
+  position: absolute;
+  border-radius: 4px;
+  background-color: white;
+  cursor: pointer;
+  z-index: 2;
+  opacity: 0.5;
+}
+
+.line1, .line2, .line3 {
+   width:  40px;
+   height: 4px;
+   margin: 10px 8px;
+   background-color: black;
+   border-radius: 50px;
+   transition: 0.2s;
+}
+
+.active .line1 {
+  transform: translate(0px , 15px) rotate(45deg);
+}
+
+.active .line2 {
+ opacity: 0;
+}
+
+ .active .line3 {
+  transform: translate(0px , -15px) rotate(-45deg);
+}
+
+nav {
+  padding-top: 100px;
+}
+
+nav ul {
+  margin: 0px 30px;
+}
+
+nav ul li {
+  list-style: none;
+  margin-bottom: 25px;
+  transition: 0.2s;
+}
+
+nav ul li:hover {
+  background-color: grey;
+  border-radius: 8px;
+}
+
+nav ul li a {
+  font-size:  28px;
+  padding: 10px 15px;
+  display:  block;
+  text-decoration: none;
+  font-weight: bold;
+  text-shadow: 5px 5px 8px aqua;
+   color: black;
+   /* text-shadow: 5px 5px 8px black;
+   color: aqua; */
+}
+
+.logout {
+  margin-top: 350px;
+  font-family: Impact;
+  font-weight: normal;
+  color: black;
+  text-shadow: 5px 5px 8px aqua;
+  /* text-align: center; */
+  /* transition: transform .5s; */
+}
+
+/* .logout:hover {
+  transform: scale(1.5);
+} */
+
+
+/* body {
+
+}
+
+.active body {
+  background-color: white;
+  color: white;
+} */
+
